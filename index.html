@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Palabras</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+<header class="header">
+    <img class="logo" src="assets/Logo.png" alt="logo">
+</header>
+
+<main class="main">
+    <section class="left-section">
+        <textarea id="input-text" class="textarea" cols="20" rows="10" placeholder="Introduce el texto aquí"></textarea>
+        <div>
+            <h6 class="informacion">solo letra minusculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+            <button class="boton1" onclick="encriptar()">Encriptar</button>
+            <button class="boton2" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </section>
+    <section class="right-section">
+        <textarea id="output-text" class="textarea2" cols="20" rows="10" placeholder="Ningun resultado fue  encontrado" readonly></textarea>
+        <div>
+            <button class="boton_copiar" onclick="copiar()">Copiar</button>
+        </div>
+     
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
